@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcome">
+
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.example.coronatesttrackersonntag.Welcome"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcome_to_reportList"
+            app:destination="@id/reportList" />
+        <action
+            android:id="@+id/action_welcome_to_newReport"
+            app:destination="@id/newReport" />
+    </fragment>
+    <fragment
+        android:id="@+id/newReport"
+        android:name="com.example.coronatesttrackersonntag.NewReport"
+        android:label="fragment_new_report"
+        tools:layout="@layout/fragment_new_report" >
+        <action
+            android:id="@+id/action_newReport_to_reportList"
+            app:destination="@id/reportList" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportList"
+        android:name="com.example.coronatesttrackersonntag.ReportList"
+        android:label="fragment_report_list"
+        tools:layout="@layout/fragment_report_list" >
+        <action
+            android:id="@+id/action_reportList_to_welcome"
+            app:destination="@id/welcome" />
+    </fragment>
+</navigation>

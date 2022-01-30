@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Corona Test Tracker Sunday</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--Welcome Page Strings-->
+
+
+    <!--New Report Page Strings-->
+    <string-array name="offices">
+        <item>Linz-Stadtplatz</item>
+        <item>Leonding-Meixnerkreuzung</item>
+        <item>Parkplatz-Haidcenter</item>
+    </string-array>
+    <string name="welcome_title">Welcome</string>
+    <string name="positiv_negativ">Positive/Negative</string>
+    <string name="linz_stadtplatz">Linz-Stadtplatz</string>
+    <string name="leonding_meixnerkreuzung">Leonding_Meixnerkreuzung</string>
+    <string name="parkplatz_haid">Parkplatz-Haid</string>
+    <string name="bt_new_report">New Report</string>
+    <string name="bt_report_list">Report List</string>
+
+    <!--Report List Strings-->
+
+</resources>

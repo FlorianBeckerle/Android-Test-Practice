@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Welcome">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tvWelcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_title"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPBTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/positiv_negativ"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="@+id/progressBar" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="344dp"
+            android:layout_height="22dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvLinzStadtplatz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvWelcomeTitle" />
+
+        <TextView
+            android:id="@+id/tvLinzStadtplatz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/linz_stadtplatz"
+            app:layout_constraintBottom_toTopOf="@+id/tvLeondingMeixner"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        <TextView
+            android:id="@+id/tvLeondingMeixner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leonding_meixnerkreuzung"
+            app:layout_constraintBottom_toTopOf="@+id/tvParkplatzHaid"
+            app:layout_constraintStart_toStartOf="@+id/tvLinzStadtplatz"
+            app:layout_constraintTop_toBottomOf="@+id/tvLinzStadtplatz" />
+
+        <TextView
+            android:id="@+id/tvParkplatzHaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parkplatz_haid"
+            app:layout_constraintBottom_toTopOf="@+id/btToNewReport"
+            app:layout_constraintStart_toStartOf="@+id/tvLeondingMeixner"
+            app:layout_constraintTop_toBottomOf="@+id/tvLeondingMeixner" />
+
+        <TextView
+            android:id="@+id/tvAnzLinzStadtplatz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anzahl"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvLinzStadtplatz"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar" />
+
+        <TextView
+            android:id="@+id/tvAnzLeonding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anzahl"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvLeondingMeixner"
+            app:layout_constraintEnd_toEndOf="@+id/tvAnzLinzStadtplatz" />
+
+        <TextView
+            android:id="@+id/tvAnzParkplatzHaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anzahl"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvParkplatzHaid"
+            app:layout_constraintEnd_toEndOf="@+id/tvAnzLeonding" />
+
+        <Button
+            android:id="@+id/btToNewReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_new_report"
+            app:layout_constraintBottom_toTopOf="@+id/btToReportList"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvParkplatzHaid" />
+
+        <Button
+            android:id="@+id/btToReportList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_report_list"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btToNewReport" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
