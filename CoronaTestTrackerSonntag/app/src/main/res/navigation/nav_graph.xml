@@ -18,15 +18,6 @@
             app:destination="@id/newReport" />
     </fragment>
     <fragment
-        android:id="@+id/newReport"
-        android:name="com.example.coronatesttrackersonntag.NewReport"
-        android:label="fragment_new_report"
-        tools:layout="@layout/fragment_new_report" >
-        <action
-            android:id="@+id/action_newReport_to_reportList"
-            app:destination="@id/reportList" />
-    </fragment>
-    <fragment
         android:id="@+id/reportList"
         android:name="com.example.coronatesttrackersonntag.ReportList"
         android:label="fragment_report_list"
@@ -34,5 +25,14 @@
         <action
             android:id="@+id/action_reportList_to_welcome"
             app:destination="@id/welcome" />
+    </fragment>
+    <fragment
+        android:id="@+id/newReport"
+        android:name="com.example.coronatesttrackersonntag.NewReport"
+        android:label="fragment_new_report"
+        tools:layout="@layout/fragment_new_report" >
+        <action
+            android:id="@+id/action_newReport_to_reportList"
+            app:destination="@id/reportList" />
     </fragment>
 </navigation>

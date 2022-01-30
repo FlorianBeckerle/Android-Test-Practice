@@ -20,6 +20,14 @@
     <string name="parkplatz_haid">Parkplatz-Haid</string>
     <string name="bt_new_report">New Report</string>
     <string name="bt_report_list">Report List</string>
+    <string name="new_report_title">New Report</string>
+    <string name="et_id">ID</string>
+    <string name="et_date">Date</string>
+    <string name="et_time">Time</string>
+    <string name="switch_pos">Positive</string>
+    <string name="bt_save">Save</string>
+    <string name="report_list_title">Report List</string>
+    <string name="bt_welcome">Welcome Page</string>
 
     <!--Report List Strings-->
 

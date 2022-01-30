@@ -40,10 +40,37 @@ class Welcome : Fragment() {
             view?.findNavController()?.navigate(R.id.action_welcome_to_reportList)
         }
 
+        //Progress Bar Values
+        var anzPos = 0
+        var anzNeg = 0
+
+        //Statistik Values
+        var anzLinz = 0
+        var anzLeonding = 0
+        var anzHaid = 0
 
 
+        coronaReportAppModell.ReportList.value?.forEach {
+            if(it.isPositive){
+                anzPos++
+            }else {
+                anzNeg++
+            }
 
+            when(it.office){
+                "Linz-Stadtplatz" -> anzLinz++
+                "Leonding-Meixnerkreuzung" -> anzLeonding++
+                "Parkplatz-Haidcenter" -> anzHaid++
+            }
+        }
 
+        binding.progressBar.max = anzNeg + anzPos
+        binding.progressBar.min = 0
+        binding.progressBar.progress = anzPos
+
+        binding.tvAnzLinzStadtplatz.text = anzLinz.toString()
+        binding.tvLeondingMeixner.text = anzLeonding.toString()
+        binding.tvAnzParkplatzHaid.text = anzHaid.toString()
 
         return binding.root
     }
