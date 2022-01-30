@@ -8,4 +8,8 @@ data class Report (
     var isPositive : Boolean,
     var office : String
         ) {
+
+    override fun toString(): String {
+        return "ID:'${id.substring(0,2)}'...'${id.substring(id.length-4, id.length)}', dateAndTime=$dateAndTime, isPositive=$isPositive, office='$office')"
+    }
 }
