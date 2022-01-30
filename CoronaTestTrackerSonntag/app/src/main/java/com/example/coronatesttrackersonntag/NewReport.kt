@@ -153,6 +153,9 @@ class NewReport : Fragment() {
 
 
             }
+        } else {
+            idValid = true
+            idUnique = true
         }
 
     }
